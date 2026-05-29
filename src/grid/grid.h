@@ -5,7 +5,6 @@
 #include <godot_cpp/classes/resource.hpp>
 #include <godot_cpp/variant/vector2i.hpp> 
 #include <godot_cpp/variant/typed_dictionary.hpp>
-#include <godot_cpp/variant/string_name.hpp>
 
 
 class Grid : public godot::Resource {
@@ -13,6 +12,10 @@ class Grid : public godot::Resource {
 
 protected:
     static void _bind_methods();
+
+    void SetCell(godot::Vector2i coordinates, int value) { grid[coordinates] = value; }
+
+    godot::Vector2i IntsToVector(int x, int y) { godot::Vector2i vec(x, y); return vec; }
 
 private:
     godot::Vector2i size;

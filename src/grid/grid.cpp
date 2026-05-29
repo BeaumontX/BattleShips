@@ -1,5 +1,4 @@
 #include "grid.h"
-#include <godot_cpp/core/class_db.hpp>
 
 using namespace godot;
 
@@ -17,4 +16,8 @@ void Grid::_bind_methods() {
         "set_grid",
         "get_grid"
     );
+
+
+    ClassDB::bind_method(D_METHOD("SetCell", "coordinates", "value"), &Grid::SetCell);
+    ClassDB::bind_method(D_METHOD("IntsToVector", "x", "y"), &Grid::IntsToVector);
 }
