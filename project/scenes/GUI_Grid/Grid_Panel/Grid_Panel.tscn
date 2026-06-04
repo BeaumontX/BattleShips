@@ -3,6 +3,13 @@
 [ext_resource type="Script" uid="uid://dp806vcgtbl3o" path="res://scenes/GUI_Grid/Grid_Panel/grid_panel.gd" id="1_aqrq5"]
 [ext_resource type="PackedScene" uid="uid://ibj1h720f6wy" path="res://scenes/GUI_Grid/Grid_Panel/Grid_Cell.tscn" id="1_rxe4e"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aqrq5"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0, 0.4117647, 0.5803922, 1)
+
 [node name="GridPanel" type="Control" unique_id=155703860]
 layout_mode = 3
 anchors_preset = 15
@@ -19,6 +26,14 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Panel" type="Panel" parent="AspectRatioContainer" unique_id=165635530]
+unique_name_in_owner = true
+z_index = -1
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_aqrq5")
 
 [node name="GridContainer" type="GridContainer" parent="AspectRatioContainer" unique_id=977429648]
 unique_name_in_owner = true

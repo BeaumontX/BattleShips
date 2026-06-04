@@ -1,8 +1,12 @@
 [gd_scene format=3 uid="uid://cwrqnib4mww2j"]
 
 [ext_resource type="Script" uid="uid://cts7vgebf74hg" path="res://scenes/GUI_Grid/gui_grid.gd" id="1_xx77g"]
+[ext_resource type="Script" uid="uid://dapiw5ed1mtv8" path="res://scripts/global/global_connector.gd" id="2_s5wew"]
 [ext_resource type="PackedScene" uid="uid://drr8dtmmy0kjq" path="res://scenes/GUI_Grid/Grid_Panel/Grid_Panel.tscn" id="2_xmem3"]
 [ext_resource type="PackedScene" uid="uid://cb2u0sgq47s0" path="res://scenes/GUI_Grid/GUI_Ships/GUI_Ships.tscn" id="3_6ch6l"]
+
+[sub_resource type="Resource" id="Resource_w1c2f"]
+script = ExtResource("2_s5wew")
 
 [node name="GUI_Grid" type="Control" unique_id=1744012381]
 custom_minimum_size = Vector2(160, 160)
@@ -15,6 +19,7 @@ grow_vertical = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 script = ExtResource("1_xx77g")
+connector = SubResource("Resource_w1c2f")
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="." unique_id=62398371]
 unique_name_in_owner = true

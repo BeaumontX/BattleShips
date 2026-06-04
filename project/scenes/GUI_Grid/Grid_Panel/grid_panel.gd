@@ -6,8 +6,9 @@ class_name Grid_Panel
 @onready var grid : GridContainer = %GridContainer
 @onready var vertical : Line2D = %Line2D_Vertical
 @onready var horizontal : Line2D = %Line2D_Horizontal
+@onready var bg: Panel = %Panel
 
-var children_size : float = 1
+var children_size : int = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -25,6 +26,9 @@ func UpdateChildrenSize() -> void:
 	var new_size : Vector2 = Vector2(children_size, children_size)
 	for child in %GridContainer.get_children() as Array[Control]:
 		child.custom_minimum_size = new_size
+	if bg != null:
+		bg.custom_minimum_size = grid.size
+		print()
 
 
 func _on_resized() -> void:

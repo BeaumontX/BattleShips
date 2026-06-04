@@ -138,11 +138,22 @@ func EndTurn() -> void:
 	_ClearCordsAndLines()
 	_UpdateTurnInfo()
 	_ManageGrids()
+	if game_phase != game_phases.end:
+		_Transition_Screen() 
 	
 	print("phase: ", game_phases.find_key(game_phase))
 	print("next turn")
 	print("player side: ", player_sides.find_key(turn_side))
 	print("target side: ", player_sides.find_key(target_side))
+	
+
+var transition_screen : TransitionScreen :
+	set(new_tr):
+		transition_screen = new_tr
+		_Transition_Screen()
+
+func _Transition_Screen() -> void:
+	transition_screen.SetInfo(game_phase, turn_side)
 
 func _ClearCordsAndLines() -> void:
 	current_coords.clear()
@@ -157,21 +168,26 @@ func _UpdateTurnInfo() -> void:
 
 
 func TurnEnd_PhasePrepare() -> void:
-	players[turn_side].field.CreateShipCell(Vector2i(1,1))
+	pass
 
+var loser : player_sides
 func TurnEnd_PhaseGame() -> void:
 	var defeat : bool = players[target_side].CheckDefeat()
 	if defeat:
+		loser = target_side
 		EndGame()
 
 func EndGame() -> void:
-	pass
+	print("END!!!")
+	NextPhase()
+	transition_screen.EndScreen(game_phase, opposite_side(loser))
 
 
 
 
 func _ready() -> void:
 	pass
+
 
 func _process(delta: float) -> void:
 	pass

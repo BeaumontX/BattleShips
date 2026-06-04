@@ -43,6 +43,8 @@ func AttackShip(coord : Vector2i) -> void:
 		if i.cells.has(coord):
 			ship = i
 			break
+	if ship == null:
+		return
 	
 	if !IsShipAlive(ship):
 		KillShip(ship)

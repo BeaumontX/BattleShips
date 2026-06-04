@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dapiw5ed1mtv8" path="res://scripts/global/global_connector.gd" id="2_rvslj"]
 [ext_resource type="PackedScene" uid="uid://cwrqnib4mww2j" path="res://scenes/GUI_Grid/GUI_Grid.tscn" id="3_0bbpv"]
+[ext_resource type="PackedScene" uid="uid://cck472fqsxkd5" path="res://scenes/Transition_Screen/Transition_Screen.tscn" id="3_rarhs"]
 
 [sub_resource type="Resource" id="Resource_rvslj"]
 script = ExtResource("2_rvslj")
@@ -73,3 +74,6 @@ size_flags_stretch_ratio = 8.0
 [node name="GUI_Grid" parent="MarginContainer/HBoxContainer/VBoxContainer2/Control" unique_id=83929371 instance=ExtResource("3_0bbpv")]
 layout_mode = 1
 connector = SubResource("Resource_0bbpv")
+
+[node name="TransitionScreen" parent="." unique_id=664807949 instance=ExtResource("3_rarhs")]
+layout_mode = 1
