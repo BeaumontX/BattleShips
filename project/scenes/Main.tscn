@@ -1,6 +1,16 @@
 [gd_scene format=3 uid="uid://clpojvu1pq7qh"]
 
+[ext_resource type="Script" uid="uid://dapiw5ed1mtv8" path="res://scripts/global/global_connector.gd" id="2_rvslj"]
 [ext_resource type="PackedScene" uid="uid://cwrqnib4mww2j" path="res://scenes/GUI_Grid/GUI_Grid.tscn" id="3_0bbpv"]
+
+[sub_resource type="Resource" id="Resource_rvslj"]
+script = ExtResource("2_rvslj")
+metadata/_custom_type_script = "uid://dapiw5ed1mtv8"
+
+[sub_resource type="Resource" id="Resource_0bbpv"]
+script = ExtResource("2_rvslj")
+side = 1
+metadata/_custom_type_script = "uid://dapiw5ed1mtv8"
 
 [node name="Main" type="Control" unique_id=581279285]
 layout_mode = 3
@@ -40,11 +50,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 metadata/_edit_use_anchors_ = true
 
-[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=1502830837]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 2.0
-
 [node name="Control" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer" unique_id=1791781667]
 layout_mode = 2
 size_flags_vertical = 3
@@ -52,16 +57,13 @@ size_flags_stretch_ratio = 8.0
 
 [node name="GUI_Grid" parent="MarginContainer/HBoxContainer/VBoxContainer/Control" unique_id=1744012381 instance=ExtResource("3_0bbpv")]
 layout_mode = 1
+connector = SubResource("Resource_rvslj")
 
 [node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=2103863579]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_constants/separation = 16
 metadata/_edit_use_anchors_ = true
-
-[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/HBoxContainer/VBoxContainer2" unique_id=817818224]
-layout_mode = 2
-size_flags_vertical = 3
-size_flags_stretch_ratio = 2.0
 
 [node name="Control" type="Control" parent="MarginContainer/HBoxContainer/VBoxContainer2" unique_id=381576316]
 layout_mode = 2
@@ -70,4 +72,4 @@ size_flags_stretch_ratio = 8.0
 
 [node name="GUI_Grid" parent="MarginContainer/HBoxContainer/VBoxContainer2/Control" unique_id=83929371 instance=ExtResource("3_0bbpv")]
 layout_mode = 1
-player = 1
+connector = SubResource("Resource_0bbpv")

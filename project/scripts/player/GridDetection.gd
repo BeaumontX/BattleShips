@@ -16,17 +16,27 @@ extends Node
 func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton:
 		Mouse(event)
-	elif event is InputEventKey:
-		Keyboard(event)
+	#elif event is InputEventKey:
+		#Keyboard(event)
 
 
 func Mouse(e : InputEventMouseButton) -> void:
-	pass
-	var grid_pos : Vector2
-	var cell_size : float
+	if !e.is_action_released("click_left"):
+		return
+	var grid_pos : Vector2 = Global.grids[Global.target_side].global_position
+	var cell_size : float = Global.grids[Global.target_side].grid.children_size
 	var mouse_pos : Vector2 = e.global_position
 	
-	var coord : Vector2 = (mouse_pos - grid_pos)/cell_size
+	var pos : Vector2 = (mouse_pos - grid_pos)/cell_size + Vector2(0, -0.5)
+	var coord_x : int = floori(pos.x)
+	var coord_y : int = floori(pos.y)
+	var coord : Vector2i = Vector2i(coord_x, coord_y)
+	if (coord.x < 0 or coord.y < 0) or (coord.x > 9 or coord.y > 9):
+		return
+	
+	Global.AddCoords(coord)
+
+
 
 func Keyboard(e : InputEventKey) -> void:
 	var cols : Array = range(KEY_A, KEY_K)
@@ -44,7 +54,3 @@ func Keyboard(e : InputEventKey) -> void:
 			else:
 				num = keycode - KEY_1
 		print(num)
-
-
-signal SetHorizontalCord(cord : int)
-signal SetVerticalCord(cord : int)

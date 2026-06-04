@@ -25,4 +25,6 @@ private:
 public:
     godot::TypedDictionary<godot::Vector2i, int> get_grid() const { return grid; }
     void set_grid(const godot::TypedDictionary<godot::Vector2i, int>& p_dict) { grid = p_dict; }
+
+    Grid();
 };

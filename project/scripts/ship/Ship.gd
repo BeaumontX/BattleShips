@@ -3,13 +3,14 @@ class_name Ship
 
 
 
-enum types {
-	Battleship,
-	Carrier,
-	Destroyer,
-	Submarine
+enum lengths {
+	None,
+	Single,
+	Double,
+	Triple,
+	Quadriple
 }
-var type : types = types.Submarine
+var length : lengths = lengths.None
 
 
-var cells : Dictionary[Vector2i, bool]
+var cells : Array[Vector2i]

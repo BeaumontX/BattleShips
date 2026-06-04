@@ -21,3 +21,13 @@ void Grid::_bind_methods() {
     ClassDB::bind_method(D_METHOD("SetCell", "coordinates", "value"), &Grid::SetCell);
     ClassDB::bind_method(D_METHOD("IntsToVector", "x", "y"), &Grid::IntsToVector);
 }
+
+Grid::Grid() {
+    for (size_t i = 0; i < 10; i++)
+    {
+        for (size_t j = 0; j < 10; j++)
+        {
+            grid[godot::Vector2i(i, j)] = 0;
+        }
+    }
+}

@@ -1,70 +1,8 @@
-[gd_scene format=4 uid="uid://cwrqnib4mww2j"]
+[gd_scene format=3 uid="uid://cwrqnib4mww2j"]
 
 [ext_resource type="Script" uid="uid://cts7vgebf74hg" path="res://scenes/GUI_Grid/gui_grid.gd" id="1_xx77g"]
-[ext_resource type="Texture2D" uid="uid://cehia1k54lgio" path="res://resources/tilesets/ship.jpg" id="2_st52u"]
 [ext_resource type="PackedScene" uid="uid://drr8dtmmy0kjq" path="res://scenes/GUI_Grid/Grid_Panel/Grid_Panel.tscn" id="2_xmem3"]
-[ext_resource type="Texture2D" uid="uid://ceb40702bybyu" path="res://resources/tilesets/test-ship.png" id="3_st52u"]
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6ch6l"]
-texture = ExtResource("2_st52u")
-texture_region_size = Vector2i(160, 160)
-3:1/0 = 0
-3:1/0/terrain_set = 0
-3:1/0/terrain = 0
-3:1/0/terrains_peering_bit/bottom_side = 0
-1:2/0 = 0
-1:2/0/terrain_set = 0
-1:2/0/terrain = 0
-3:2/0 = 0
-3:2/0/terrain_set = 0
-3:2/0/terrain = 0
-3:2/0/terrains_peering_bit/bottom_side = 0
-3:2/0/terrains_peering_bit/top_side = 0
-3:3/0 = 0
-3:3/0/terrain_set = 0
-3:3/0/terrain = 0
-3:3/0/terrains_peering_bit/top_side = 0
-
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_xmem3"]
-texture = ExtResource("3_st52u")
-0:0/0 = 0
-0:0/0/terrain_set = 0
-0:0/0/terrain = 1
-1:0/0 = 0
-1:0/0/terrain_set = 0
-1:0/0/terrain = 1
-1:0/0/terrains_peering_bit/bottom_side = 1
-2:0/0 = 0
-2:0/0/terrain_set = 0
-2:0/0/terrain = 1
-2:0/0/terrains_peering_bit/bottom_side = 1
-2:0/0/terrains_peering_bit/top_side = 1
-3:0/0 = 0
-3:0/0/terrain_set = 0
-3:0/0/terrain = 1
-3:0/0/terrains_peering_bit/top_side = 1
-4:0/0 = 0
-4:0/0/terrain_set = 0
-4:0/0/terrain = 1
-4:0/0/terrains_peering_bit/right_side = 1
-5:0/0 = 0
-5:0/0/terrain_set = 0
-5:0/0/terrain = 1
-5:0/0/terrains_peering_bit/right_side = 1
-5:0/0/terrains_peering_bit/left_side = 1
-6:0/0 = 0
-6:0/0/terrain_set = 0
-6:0/0/terrain = 1
-6:0/0/terrains_peering_bit/left_side = 1
-
-[sub_resource type="TileSet" id="TileSet_k2lpt"]
-terrain_set_0/mode = 0
-terrain_set_0/terrain_0/name = "Main"
-terrain_set_0/terrain_0/color = Color(0.5, 0.34375, 0.25, 1)
-terrain_set_0/terrain_1/name = "Test"
-terrain_set_0/terrain_1/color = Color(1, 0, 0, 1)
-sources/0 = SubResource("TileSetAtlasSource_6ch6l")
-sources/1 = SubResource("TileSetAtlasSource_xmem3")
+[ext_resource type="PackedScene" uid="uid://cb2u0sgq47s0" path="res://scenes/GUI_Grid/GUI_Ships/GUI_Ships.tscn" id="3_6ch6l"]
 
 [node name="GUI_Grid" type="Control" unique_id=1744012381]
 custom_minimum_size = Vector2(160, 160)
@@ -87,21 +25,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="GUI_Ships" parent="AspectRatioContainer" unique_id=1254474182 instance=ExtResource("3_6ch6l")]
+unique_name_in_owner = true
+layout_mode = 2
+
 [node name="GridPanel" parent="AspectRatioContainer" unique_id=155703860 instance=ExtResource("2_xmem3")]
 unique_name_in_owner = true
 layout_mode = 2
-
-[node name="Control" type="Control" parent="AspectRatioContainer" unique_id=423883034]
-layout_mode = 2
-
-[node name="TileMapLayer" type="TileMapLayer" parent="AspectRatioContainer/Control" unique_id=442702391]
-unique_name_in_owner = true
-texture_filter = 1
-scale = Vector2(6.75, 6.75)
-tile_map_data = PackedByteArray("AAAIAAgAAQAGAAAAAAAHAAgAAQAFAAAAAAAGAAgAAQAEAAAAAAAEAAYAAQADAAAAAAAEAAUAAQABAAAAAAACAAcAAQABAAAAAAACAAgAAQADAAAAAAAIAAYAAQAGAAAAAAAHAAYAAQAFAAAAAAAGAAYAAQAEAAAAAAAIAAIAAQAAAAAAAAAGAAQAAQADAAAAAAAGAAMAAQABAAAAAAABAAYAAQADAAAAAAABAAUAAQACAAAAAAABAAQAAQACAAAAAAABAAMAAQABAAAAAAAGAAEAAQAAAAAAAAAEAAIAAQAAAAAAAAACAAEAAQAAAAAAAAA=")
-tile_set = SubResource("TileSet_k2lpt")
-rendering_quadrant_size = 64
-collision_enabled = false
-navigation_enabled = false
 
 [connection signal="resized" from="." to="." method="_on_resized"]

@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://drr8dtmmy0kjq"]
 
+[ext_resource type="Script" uid="uid://dp806vcgtbl3o" path="res://scenes/GUI_Grid/Grid_Panel/grid_panel.gd" id="1_aqrq5"]
 [ext_resource type="PackedScene" uid="uid://ibj1h720f6wy" path="res://scenes/GUI_Grid/Grid_Panel/Grid_Cell.tscn" id="1_rxe4e"]
 
 [node name="GridPanel" type="Control" unique_id=155703860]
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_aqrq5")
 
 [node name="AspectRatioContainer" type="AspectRatioContainer" parent="." unique_id=1184319343]
 layout_mode = 1
@@ -19,307 +21,418 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="GridContainer" type="GridContainer" parent="AspectRatioContainer" unique_id=977429648]
+unique_name_in_owner = true
 layout_mode = 2
 theme_override_constants/h_separation = 0
 theme_override_constants/v_separation = 0
 columns = 10
 
 [node name="GridCell_001" parent="AspectRatioContainer/GridContainer" unique_id=937325225 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_002" parent="AspectRatioContainer/GridContainer" unique_id=1484065681 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_003" parent="AspectRatioContainer/GridContainer" unique_id=2057306399 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_004" parent="AspectRatioContainer/GridContainer" unique_id=926655101 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_005" parent="AspectRatioContainer/GridContainer" unique_id=148009824 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_006" parent="AspectRatioContainer/GridContainer" unique_id=276602474 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_007" parent="AspectRatioContainer/GridContainer" unique_id=658943252 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_008" parent="AspectRatioContainer/GridContainer" unique_id=823449075 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_009" parent="AspectRatioContainer/GridContainer" unique_id=108867166 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_010" parent="AspectRatioContainer/GridContainer" unique_id=1814870319 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_011" parent="AspectRatioContainer/GridContainer" unique_id=445009477 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_012" parent="AspectRatioContainer/GridContainer" unique_id=671456541 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_013" parent="AspectRatioContainer/GridContainer" unique_id=375241336 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_014" parent="AspectRatioContainer/GridContainer" unique_id=1675019567 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_015" parent="AspectRatioContainer/GridContainer" unique_id=2066826641 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_016" parent="AspectRatioContainer/GridContainer" unique_id=1196791180 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_017" parent="AspectRatioContainer/GridContainer" unique_id=2069978941 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_018" parent="AspectRatioContainer/GridContainer" unique_id=439448558 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_019" parent="AspectRatioContainer/GridContainer" unique_id=119273081 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_020" parent="AspectRatioContainer/GridContainer" unique_id=1903871392 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_021" parent="AspectRatioContainer/GridContainer" unique_id=1555090365 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_022" parent="AspectRatioContainer/GridContainer" unique_id=320120357 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_023" parent="AspectRatioContainer/GridContainer" unique_id=1992267862 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_024" parent="AspectRatioContainer/GridContainer" unique_id=866390991 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_025" parent="AspectRatioContainer/GridContainer" unique_id=1710314182 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_026" parent="AspectRatioContainer/GridContainer" unique_id=1431207477 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_027" parent="AspectRatioContainer/GridContainer" unique_id=919392941 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_028" parent="AspectRatioContainer/GridContainer" unique_id=1600754048 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_029" parent="AspectRatioContainer/GridContainer" unique_id=119357065 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_030" parent="AspectRatioContainer/GridContainer" unique_id=2038260867 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_031" parent="AspectRatioContainer/GridContainer" unique_id=1131601139 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_032" parent="AspectRatioContainer/GridContainer" unique_id=451768142 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_033" parent="AspectRatioContainer/GridContainer" unique_id=2105201596 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_034" parent="AspectRatioContainer/GridContainer" unique_id=1710316536 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_035" parent="AspectRatioContainer/GridContainer" unique_id=1647851919 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_036" parent="AspectRatioContainer/GridContainer" unique_id=1222273930 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_037" parent="AspectRatioContainer/GridContainer" unique_id=282186391 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_038" parent="AspectRatioContainer/GridContainer" unique_id=1120266686 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_039" parent="AspectRatioContainer/GridContainer" unique_id=898439334 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_040" parent="AspectRatioContainer/GridContainer" unique_id=2095451749 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_041" parent="AspectRatioContainer/GridContainer" unique_id=64514194 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_042" parent="AspectRatioContainer/GridContainer" unique_id=1515804650 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_043" parent="AspectRatioContainer/GridContainer" unique_id=1292323670 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_044" parent="AspectRatioContainer/GridContainer" unique_id=38943032 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_045" parent="AspectRatioContainer/GridContainer" unique_id=2129761254 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_046" parent="AspectRatioContainer/GridContainer" unique_id=2139087950 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_047" parent="AspectRatioContainer/GridContainer" unique_id=1484727622 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_048" parent="AspectRatioContainer/GridContainer" unique_id=89142300 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_049" parent="AspectRatioContainer/GridContainer" unique_id=546841363 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_050" parent="AspectRatioContainer/GridContainer" unique_id=1706940259 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_051" parent="AspectRatioContainer/GridContainer" unique_id=1441845801 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_052" parent="AspectRatioContainer/GridContainer" unique_id=825329554 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_053" parent="AspectRatioContainer/GridContainer" unique_id=1772808832 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_054" parent="AspectRatioContainer/GridContainer" unique_id=2033091132 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_055" parent="AspectRatioContainer/GridContainer" unique_id=319344042 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_056" parent="AspectRatioContainer/GridContainer" unique_id=1491146532 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_057" parent="AspectRatioContainer/GridContainer" unique_id=935820735 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_058" parent="AspectRatioContainer/GridContainer" unique_id=181857592 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_059" parent="AspectRatioContainer/GridContainer" unique_id=1404027611 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_060" parent="AspectRatioContainer/GridContainer" unique_id=1086753316 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_061" parent="AspectRatioContainer/GridContainer" unique_id=1176214932 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_062" parent="AspectRatioContainer/GridContainer" unique_id=1786091235 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_063" parent="AspectRatioContainer/GridContainer" unique_id=1804734484 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_064" parent="AspectRatioContainer/GridContainer" unique_id=799246957 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_065" parent="AspectRatioContainer/GridContainer" unique_id=1770033992 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_066" parent="AspectRatioContainer/GridContainer" unique_id=1477453323 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_067" parent="AspectRatioContainer/GridContainer" unique_id=1589247464 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_068" parent="AspectRatioContainer/GridContainer" unique_id=556899352 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_069" parent="AspectRatioContainer/GridContainer" unique_id=313787393 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_070" parent="AspectRatioContainer/GridContainer" unique_id=784042480 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_071" parent="AspectRatioContainer/GridContainer" unique_id=487980445 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_072" parent="AspectRatioContainer/GridContainer" unique_id=72545739 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_073" parent="AspectRatioContainer/GridContainer" unique_id=1328547689 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_074" parent="AspectRatioContainer/GridContainer" unique_id=609825280 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_075" parent="AspectRatioContainer/GridContainer" unique_id=1120273037 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_076" parent="AspectRatioContainer/GridContainer" unique_id=369525955 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_077" parent="AspectRatioContainer/GridContainer" unique_id=1345684731 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_078" parent="AspectRatioContainer/GridContainer" unique_id=801490564 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_079" parent="AspectRatioContainer/GridContainer" unique_id=1374514252 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_080" parent="AspectRatioContainer/GridContainer" unique_id=1798250968 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_081" parent="AspectRatioContainer/GridContainer" unique_id=1552806605 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_082" parent="AspectRatioContainer/GridContainer" unique_id=498068457 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_083" parent="AspectRatioContainer/GridContainer" unique_id=749481677 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_084" parent="AspectRatioContainer/GridContainer" unique_id=1765520001 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_085" parent="AspectRatioContainer/GridContainer" unique_id=1256349923 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_086" parent="AspectRatioContainer/GridContainer" unique_id=412644622 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_087" parent="AspectRatioContainer/GridContainer" unique_id=2127870418 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_088" parent="AspectRatioContainer/GridContainer" unique_id=1041332380 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_089" parent="AspectRatioContainer/GridContainer" unique_id=434799859 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_090" parent="AspectRatioContainer/GridContainer" unique_id=929992795 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_091" parent="AspectRatioContainer/GridContainer" unique_id=296525508 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_092" parent="AspectRatioContainer/GridContainer" unique_id=122527740 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_093" parent="AspectRatioContainer/GridContainer" unique_id=593984250 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_094" parent="AspectRatioContainer/GridContainer" unique_id=4717615 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_095" parent="AspectRatioContainer/GridContainer" unique_id=1224394585 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_096" parent="AspectRatioContainer/GridContainer" unique_id=249538995 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_097" parent="AspectRatioContainer/GridContainer" unique_id=1510163684 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_098" parent="AspectRatioContainer/GridContainer" unique_id=207732687 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_099" parent="AspectRatioContainer/GridContainer" unique_id=1649043839 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
 
 [node name="GridCell_100" parent="AspectRatioContainer/GridContainer" unique_id=292576772 instance=ExtResource("1_rxe4e")]
+custom_minimum_size = Vector2(108, 108)
 layout_mode = 2
+
+[node name="Line2D_Vertical" type="Line2D" parent="." unique_id=219191564]
+unique_name_in_owner = true
+width = 7.5
+
+[node name="Line2D_Horizontal" type="Line2D" parent="." unique_id=2055213090]
+unique_name_in_owner = true
+width = 7.5
+
+[connection signal="resized" from="." to="." method="_on_resized"]
