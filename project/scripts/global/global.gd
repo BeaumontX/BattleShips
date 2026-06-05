@@ -110,6 +110,7 @@ func _PhaseGame_ConfirmTarget(coord : Vector2i) -> void:
 	
 	players[target_side].RevealCell(coord)
 	players[target_side].AttackShip(coord)
+	grids[target_side].ships.SwitchTile(coord)
 	
 	EndTurn()
 
